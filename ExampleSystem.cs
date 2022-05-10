@@ -2,7 +2,7 @@
 using Leopotam.EcsLite;
 using Leopotam.EcsLite.Di;
 
-namespace ISog
+namespace TestMod
 {
     public class ExampleSystem : IEcsRunSystem
     {

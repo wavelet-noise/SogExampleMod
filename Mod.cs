@@ -4,7 +4,7 @@ using Leopotam.EcsLite;
 
 namespace TestMod
 {
-    public class Mod : Sog.Mod
+    public class VanillaMod : Sog.Mod
     {
         public override List<IEcsSystem> GetSystems()
         {

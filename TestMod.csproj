@@ -1,0 +1,75 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>Debug</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>Release</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="UnityEngine.CoreModule" />
+    <None Remove="UnityEngine.UI" />
+    <None Remove="UnityEngine.IMGUIModule" />
+    <None Remove="Leopotam.EcsLite" />
+    <None Remove="Leopotam.EcsLite.Di" />
+    <None Remove="Assembly-CSharp" />
+    <None Remove="SogEcs" />
+    <None Remove="UnityEngine" />
+    <None Remove="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <None Remove="Sog.Core" />
+    <None Remove="Sog.Ecs" />
+    <None Remove="Sog.Input" />
+    <None Remove="Sog.Render" />
+    <None Remove="Sog.Basic" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="SogEcs">
+      <HintPath>..\win\Sands of Glory_Data\Managed\SogEcs.dll</HintPath>
+    </Reference>
+    <Reference Include="Leopotam.EcsLite.Di">
+      <HintPath>..\win\Sands of Glory_Data\Managed\Leopotam.EcsLite.Di.dll</HintPath>
+    </Reference>
+    <Reference Include="Leopotam.EcsLite">
+      <HintPath>..\win\Sands of Glory_Data\Managed\Leopotam.EcsLite.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\win\Sands of Glory_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\win\Sands of Glory_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Leopotam.EcsLite.Di">
+      <HintPath>..\Sands_of_Glory\win\Sands of Glory_Data\Managed\Leopotam.EcsLite.Di.dll</HintPath>
+    </Reference>
+    <Reference Include="Leopotam.EcsLite">
+      <HintPath>..\Sands_of_Glory\win\Sands of Glory_Data\Managed\Leopotam.EcsLite.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\Sands_of_Glory\win\Sands of Glory_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\Sands_of_Glory\win\Sands of Glory_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Sog.Core">
+      <HintPath>..\Sands_of_Glory\win\Sands of Glory_Data\Managed\Sog.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sog.Ecs">
+      <HintPath>..\Sands_of_Glory\win\Sands of Glory_Data\Managed\Sog.Ecs.dll</HintPath>
+    </Reference>
+    <Reference Include="Sog.Input">
+      <HintPath>..\Sands_of_Glory\win\Sands of Glory_Data\Managed\Sog.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="Sog.Render">
+      <HintPath>..\Sands_of_Glory\win\Sands of Glory_Data\Managed\Sog.Render.dll</HintPath>
+    </Reference>
+    <Reference Include="Sog.Basic">
+      <HintPath>..\Sands_of_Glory\win\Sands of Glory_Data\Managed\Sog.Basic.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
